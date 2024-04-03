@@ -1,0 +1,7 @@
+<div class="filter-list">
+    @for (year of missionYears; track $index) {
+        <div >
+            <button class="button" (click)="handleFilterClick(year)">{{year}}</button>
+        </div>
+    }
+</div>

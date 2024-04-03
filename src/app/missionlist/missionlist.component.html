@@ -1,0 +1,14 @@
+<div style="display: flex; flex-direction: column;"> 
+    <div class="missions-container" >
+        @for (mission of data; track $index) {
+        <div class="mission-info" (click)="handleDetailsDisplay(mission.flight_number)">
+            <div>
+                <img src={{mission.links.mission_patch_small}} alt="rocket pic" width="256" />
+            </div>
+            <div>{{mission.mission_name}}</div>
+            <div>{{mission.launch_year}}</div>
+            <div>{{mission.details ? mission.details : "No details to display"}}</div>
+        </div>
+        }
+    </div>
+</div>

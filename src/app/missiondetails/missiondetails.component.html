@@ -1,0 +1,12 @@
+<div class="mission-container">
+    <div class="mission-info">
+        <div>
+            <img src={{payload.links.mission_patch_small}} alt="rocket pic" width="500" />
+        </div>
+        <div>
+            <div>{{payload.mission_name}}</div>
+            <div>{{payload.launch_year}}</div>
+            <div>{{payload.details ? payload.details : "No details to display"}}</div>
+        </div>
+    </div>
+</div>
